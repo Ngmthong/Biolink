@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#08090d">
+<meta name="description" content="Thế Giới Đồ Chơi Mthongiosvn - Game, Mod, Tiện ích, hỗ trợ 24/7">
+<title>Thế Giới Đồ Chơi Mthongiosvn</title>
+<style>
+:root{--bg:#07090d;--card:#10131a;--text:#f7f8fb;--muted:#89919f;--line:#ffffff14;--gold:#f3c85b;--green:#42e597}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif;padding-bottom:92px}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 12% 0,#f3c85b1c,transparent 28%),radial-gradient(circle at 90% 15%,#ff65b51a,transparent 30%),linear-gradient(160deg,#040507,#0c0f15 55%,#050609)}
+button,input{font:inherit}.wrap{width:min(560px,94%);margin:auto;padding:10px 0 25px}
+.top,.bottom{border:1px solid var(--line);background:#080a0ddd;backdrop-filter:blur(18px);box-shadow:0 14px 40px #0008}
+.top{position:sticky;top:8px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:9px 11px;border-radius:17px;margin-bottom:12px}
+.brand{font-size:10px;font-weight:900;letter-spacing:1px}.online{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green);margin-right:7px}
+.actions{display:flex;gap:6px}.icon{width:36px;height:36px;border:1px solid var(--line);border-radius:11px;background:#ffffff08;color:#fff;font-size:15px;cursor:pointer}
+.hero{text-align:center;padding:24px 14px 18px;border:1px solid #f3c85b30;border-radius:28px;background:#ffffff06;box-shadow:0 20px 60px #0008}
+.avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #ffe998;box-shadow:0 0 0 7px #f3c85b12,0 0 50px #f3c85b35}
+h1{font-size:22px;line-height:1.15;margin:17px 0 6px}.sub{color:#8f97a4;font-size:10px}
+.status{display:inline-flex;align-items:center;margin-top:12px;padding:7px 11px;border:1px solid #42e59738;border-radius:999px;color:#8ef0bb;font-size:8px;font-weight:900}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.stat{padding:10px;border:1px solid var(--line);border-radius:14px;background:#0004;font-size:9px;font-weight:900;color:#e9d27e}.stat span{display:block;color:#6f7784;font-size:7px;margin-top:3px;font-weight:500}
+.title{display:flex;align-items:center;gap:8px;margin:20px 2px 9px;color:#e8d38a;font-size:9px;font-weight:900;letter-spacing:1.5px}.title:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,#f3c85b45,transparent)}
+.card,.link,.music,.game{border:1px solid var(--line);background:#ffffff06;border-radius:17px;box-shadow:0 12px 30px #0006}.card{padding:14px}.text{margin:0;color:#a8afba;font-size:10px;line-height:1.7}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.quick a{min-height:68px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;border:1px solid var(--line);border-radius:15px;background:#ffffff06;color:#f6f7fa!important;font-size:9px;font-weight:900;text-decoration:none}.qi{width:30px;height:30px;display:grid;place-items:center}.qi svg{width:27px;height:27px}.fb{color:#4d7cff}.tg{color:#31b7ff}.zl{color:#20d99a}
+.search{width:100%;padding:12px 13px;margin-top:9px;border:1px solid #ffffff12;border-radius:13px;background:#07090d;color:#fff;outline:0;font-size:10px}
+.links{display:grid;gap:8px}.link{display:flex;align-items:center;gap:11px;padding:12px;color:#f6f7fa!important;text-decoration:none}.link:visited{color:#f6f7fa!important}.li{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:#ffffff08;border:1px solid #f3c85b24}.li svg{width:29px;height:29px}.info{flex:1}.info b{font-size:12px}.info small{display:block;color:#707885;font-size:8px;margin-top:3px}.arrow{font-size:21px;color:#d9bf6b}
+.games{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:11px}.game{min-height:76px;padding:11px;display:flex;align-items:flex-end;position:relative;overflow:hidden;cursor:pointer}.game:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 100% 0,var(--c),transparent 58%);opacity:.25}.game b,.game small{position:relative;z-index:1}.game b{font-size:10px}.game small{position:absolute;top:7px;right:7px;color:#e7ca72;font-size:7px}
+.lux{text-align:center;margin-top:10px;padding:16px;border:1px solid #f3c85b35;border-radius:18px;background:#f3c85b08}.lux b{display:block;color:#efd78d;font-size:10px;letter-spacing:1.7px}.lux small{color:#707782;font-size:8px}
+.music{display:flex;align-items:center;gap:9px;padding:11px;position:relative}.music:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:17px 0 0 17px;background:var(--gold);box-shadow:0 0 15px var(--gold)}
+.musicInfo{flex:1}.musicInfo b{font-size:10px}.musicInfo small{display:block;color:#717986;font-size:7px;margin-top:3px}.ctrl{border:1px solid #f3c85b55;border-radius:11px;padding:9px 10px;background:linear-gradient(135deg,#fff0a4,#bb8c1c);color:#080706;font-weight:900;font-size:9px;cursor:pointer}.ctrl.stop{background:#ffffff08;color:#fff;border-color:var(--line)}.vol{width:75px;accent-color:#f3c85b}
+.share{width:100%;padding:12px;margin-top:9px;border:1px solid #f3c85b35;border-radius:13px;background:#f3c85b0a;color:#ead28a;font-size:9px;font-weight:900;cursor:pointer}
+.bottom{position:fixed;bottom:9px;left:50%;transform:translateX(-50%);z-index:40;width:min(540px,92%);display:grid;grid-template-columns:repeat(4,1fr);padding:6px;border-radius:18px}.nav{border:0;background:transparent;color:#7f8794;padding:6px;font-size:7px;font-weight:800;cursor:pointer}.nav b{display:block;font-size:17px;margin-bottom:2px;font-weight:500}.nav.active{color:#f1d37d}
+.toast{position:fixed;left:50%;bottom:82px;z-index:100;transform:translate(-50%,10px);opacity:0;transition:.2s;padding:9px 13px;border-radius:11px;background:#161a22;border:1px solid #f3c85b35;color:#efd78d;font-size:9px;font-weight:800;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:390px){h1{font-size:19px}.vol{width:58px}}
+.light body{background:#eef1f6;color:#171a20}.light .top,.light .bottom{background:#ffffffdc}.light .card,.light .link,.light .quick a,.light .game,.light .music{background:#fff;color:#171a20;box-shadow:0 10px 25px #0000000d}.light .search{background:#fff;color:#111}.light .sub,.light .text,.light .info small,.light .musicInfo small{color:#65707d}
+</style>
+</head>
+<body>
+<div class="wrap" id="home">
+<header class="top">
+<div class="brand"><span class="online"></span>MTHONGIOSVN • PREMIUM</div>
+<div class="actions"><button class="icon" id="theme" type="button" aria-label="Đổi giao diện">☀️</button><button class="icon" id="shareTop" type="button" aria-label="Chia sẻ">↗</button></div>
+</header>
+
+<section class="hero">
+<img class="avatar" src="assets/avatar.jpg" alt="Avatar Mthongiosvn">
+<h1>THẾ GIỚI ĐỒ CHƠI MTHONGIOSVN</h1>
+<div class="sub">🎮 Game • Mod • Tiện ích • Hỗ trợ 24/7</div>
+<div class="status"><span class="online"></span> ONLINE • HỖ TRỢ 24/7</div>
+<div class="stats"><div class="stat">⚡ NHANH<span>Phản hồi</span></div><div class="stat">◆ UY TÍN<span>Chất lượng</span></div><div class="stat">♛ 24/7<span>Hỗ trợ</span></div></div>
+</section>
+
+<div class="title">✦ LỜI CHÀO</div>
+<section class="card"><p class="text">Chào bạn đã đến với <b style="color:#f0d787">Thế Giới Đồ Chơi của Mthongiosvn</b>! Nếu bạn cần hỗ trợ thì chọn thông tin liên hệ ở phía dưới.</p></section>
+
+<div class="title">✦ LIÊN HỆ NHANH</div>
+<div class="quick">
+<a href="https://www.facebook.com/share/19pY3FXUj4/" target="_blank" rel="noopener noreferrer"><span class="qi fb">
+<svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.3-.1-2.4-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.6v3h2.8v8z"/></svg></span>Facebook</a>
+<a href="https://t.me/HackmodgameIOS_vn" target="_blank" rel="noopener noreferrer"><span class="qi tg">
+<svg viewBox="0 0 24 24"><path fill="currentColor" d="M21.5 4.6 18.4 19c-.2 1-1 1.3-1.8.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.7-7.9c.4-.3-.1-.5-.6-.2L6.2 12.9l-4.6-1.5c-1-.3-1-1 .2-1.5L19.8 3.5c.8-.3 1.9.2 1.7 1.1z"/></svg></span>Telegram</a>
+<a href="https://zalo.me/0383400813" target="_blank" rel="noopener noreferrer"><span class="qi zl">
+<svg viewBox="0 0 48 48"><path fill="currentColor" d="M11 8h26c2.8 0 5 2.2 5 5v15c0 2.8-2.2 5-5 5H24l-7.7 7.1c-.9.8-2.3.2-2.3-1v-6.1h-3c-2.8 0-5-2.2-5-5V13c0-2.8 2.2-5 5-5z"/><path fill="#07090d" d="M15 17h12v3.4l-6.5 6.2H27V30H15v-3.4l6.4-6.2H15z"/></svg></span>Zalo</a>
+</div>
+<input id="search" class="search" type="search" placeholder="🔎 Tìm game hoặc liên hệ..." autocomplete="off">
+
+<div class="title" id="contact">✦ THÔNG TIN</div>
+<section class="links">
+<a class="link searchable" href="https://www.facebook.com/share/19pY3FXUj4/" target="_blank" rel="noopener noreferrer"><div class="li fb"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.3-.1-2.4-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.6v3h2.8v8z"/></svg></div><div class="info"><b>Facebook</b><small>Theo dõi & liên hệ Mthongiosvn</small></div><span class="arrow">›</span></a>
+<a class="link searchable" href="https://t.me/HackmodgameIOS_vn" target="_blank" rel="noopener noreferrer"><div class="li tg"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M21.5 4.6 18.4 19c-.2 1-1 1.3-1.8.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.7-7.9c.4-.3-.1-.5-.6-.2L6.2 12.9l-4.6-1.5c-1-.3-1-1 .2-1.5L19.8 3.5c.8-.3 1.9.2 1.7 1.1z"/></svg></div><div class="info"><b>Telegram</b><small>Kênh cập nhật thông tin</small></div><span class="arrow">›</span></a>
+<a class="link searchable" href="https://zalo.me/0383400813" target="_blank" rel="noopener noreferrer"><div class="li zl"><svg viewBox="0 0 48 48"><path fill="currentColor" d="M11 8h26c2.8 0 5 2.2 5 5v15c0 2.8-2.2 5-5 5H24l-7.7 7.1c-.9.8-2.3.2-2.3-1v-6.1h-3c-2.8 0-5-2.2-5-5V13c0-2.8 2.2-5 5-5z"/><path fill="#07090d" d="M15 17h12v3.4l-6.5 6.2H27V30H15v-3.4l6.4-6.2H15z"/></svg></div><div class="info"><b>Zalo</b><small>Nhắn tin trực tiếp</small></div><span class="arrow">›</span></a>
+</section>
+
+<div class="title" id="games">✦ THẾ GIỚI GAME</div>
+<section class="card"><p class="text">Free Fire, Liên Quân, PUBG, Play Together và nhiều game khác.</p>
+<div class="games">
+<div class="game searchable" style="--c:#ff3b30" data-name="Free Fire"><small>HOT</small><b>🔥 FREE FIRE</b></div>
+<div class="game searchable" style="--c:#8b67ff" data-name="Liên Quân"><small>HOT</small><b>⚔️ LIÊN QUÂN</b></div>
+<div class="game searchable" style="--c:#00cfff" data-name="PUBG"><small>HOT</small><b>🎯 PUBG</b></div>
+<div class="game searchable" style="--c:#ff4fcf" data-name="Play Together"><small>HOT</small><b>🌍 PLAY TOGETHER</b></div>
+</div></section>
+
+<section class="lux"><b>◇ UY TÍN • CHẤT LƯỢNG • 24/7</b><small>Luôn sẵn sàng đồng hành cùng bạn</small></section>
+
+<div class="title" id="musicSection">✦ NHẠC NỀN</div>
+<section class="music">
+<div class="musicInfo"><b>🎵 Mthongiosvn Music</b><small id="musicStatus">Nhấn PHÁT để nghe nhạc</small></div>
+<button class="ctrl" id="play" type="button">▶ PHÁT</button>
+<button class="ctrl stop" id="stop" type="button">■</button>
+<input class="vol" id="vol" type="range" min="0" max="1" step=".01" value=".7" aria-label="Âm lượng">
+<audio id="audio" preload="metadata" loop playsinline><source src="assets/music.mp3" type="audio/mpeg"></audio>
+</section>
+<button class="share" id="share" type="button">↗ CHIA SẺ TRANG BIO</button>
+<footer style="text-align:center;color:#555d68;font-size:8px;margin:20px 0">⭐ Cảm ơn bạn đã ghé MTHONGIOSVN • 2026</footer>
+</div>
+
+<nav class="bottom" aria-label="Điều hướng">
+<button class="nav active" type="button" data-go="home"><b>⌂</b>Trang chủ</button>
+<button class="nav" type="button" data-go="contact"><b>☏</b>Liên hệ</button>
+<button class="nav" type="button" data-go="musicSection"><b>♫</b>Nhạc</button>
+<button class="nav" type="button" id="up"><b>↑</b>Lên đầu</button>
+</nav>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const $$ = s => document.querySelectorAll(s);
+  const toast = msg => {
+    const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+    clearTimeout(window.__toastTimer);
+    window.__toastTimer = setTimeout(() => t.classList.remove('show'), 1800);
+  };
+
+  // MUSIC: requires one user tap because mobile browsers block autoplay.
+  const audio = $('#audio'), play = $('#play'), stop = $('#stop'), vol = $('#vol'), status = $('#musicStatus');
+  audio.volume = 0.7;
+  const syncMusic = () => {
+    play.textContent = audio.paused ? '▶ PHÁT' : '❚❚ DỪNG';
+  };
+  play.addEventListener('click', async () => {
+    try {
+      if (audio.paused) {
+        await audio.play();
+        status.textContent = 'Đang phát nhạc 🎵';
+      } else {
+        audio.pause();
+        status.textContent = 'Đã tạm dừng';
+      }
+    } catch (e) {
+      status.textContent = 'Không thể phát — hãy bấm lại nút PHÁT';
+      toast('Trình duyệt cần thao tác chạm để phát nhạc');
+    }
+    syncMusic();
+  });
+  stop.addEventListener('click', () => {
+    audio.pause(); audio.currentTime = 0; status.textContent = 'Đã dừng'; syncMusic();
+  });
+  vol.addEventListener('input', () => audio.volume = Number(vol.value));
+  audio.addEventListener('play', syncMusic);
+  audio.addEventListener('pause', syncMusic);
+  audio.addEventListener('error', () => {
+    status.textContent = 'Lỗi file nhạc — kiểm tra assets/music.mp3';
+    toast('Không tìm thấy file nhạc');
+  });
+  syncMusic();
+
+  // THEME
+  const setTheme = light => {
+    document.documentElement.classList.toggle('light', light);
+    $('#theme').textContent = light ? '🌙' : '☀️';
+    try { localStorage.setItem('mth-theme', light ? '1' : '0'); } catch(e) {}
+  };
+  let light = false;
+  try { light = localStorage.getItem('mth-theme') === '1'; } catch(e) {}
+  setTheme(light);
+  $('#theme').addEventListener('click', () => setTheme(!document.documentElement.classList.contains('light')));
+
+  // SHARE: Web Share on supported devices, clipboard fallback, then a visible message.
+  async function share() {
+    try {
+      if (navigator.share) {
+        await navigator.share({title:'Thế Giới Đồ Chơi Mthongiosvn', text:'Game • Mod • Tiện ích • Hỗ trợ 24/7', url:location.href});
+      } else if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(location.href);
+        toast('Đã sao chép link Bio');
+      } else {
+        toast('Hãy dùng nút Chia sẻ của trình duyệt');
+      }
+    } catch(e) {}
+  }
+  $('#share').addEventListener('click', share);
+  $('#shareTop').addEventListener('click', share);
+
+  // SEARCH
+  $('#search').addEventListener('input', e => {
+    const q = e.target.value.trim().toLowerCase();
+    $$('.searchable').forEach(el => {
+      el.style.display = (!q || el.textContent.toLowerCase().includes(q)) ? '' : 'none';
+    });
+  });
+
+  // NAVIGATION
+  $$('[data-go]').forEach(btn => btn.addEventListener('click', () => {
+    const target = document.getElementById(btn.dataset.go);
+    if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    $$('.nav').forEach(x => x.classList.remove('active'));
+    btn.classList.add('active');
+  }));
+  $('#up').addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // GAME CARDS
+  $$('.game').forEach(g => g.addEventListener('click', () => toast(g.dataset.name + ' • Liên hệ để được hỗ trợ')));
+
+  // Prevent accidental double-tap zoom feeling on buttons, while preserving normal links.
+  document.addEventListener('pointerdown', e => {
+    if (e.target.closest('button,.quick a,.link,.game')) e.target.closest('button,.quick a,.link,.game').style.opacity = '.78';
+  });
+  document.addEventListener('pointerup', e => {
+    const el = e.target.closest('button,.quick a,.link,.game');
+    if (el) el.style.opacity = '';
+  });
+})();
+</script>
+</body>
+</html>
